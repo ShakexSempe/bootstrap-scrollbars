@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Custom Scrollbars</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css" integrity="sha512-6qkvBbDyl5TDJtNJiC8foyEVuB6gxMBkrKy67XpqnIDxyvLLPJzmTjAj1dRJfNdmXWqD10VbJoeN4pOQqDwvRA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css"
+        integrity="sha512-6qkvBbDyl5TDJtNJiC8foyEVuB6gxMBkrKy67XpqnIDxyvLLPJzmTjAj1dRJfNdmXWqD10VbJoeN4pOQqDwvRA=="
+        crossorigin="anonymous" />
 </head>
+
 <body>
     <div class="container py-5">
         <header class="text-center text-white">
             <div class="row">
                 <div class="col-lg-7 mx-auto">
-                    <h1 class="display-4">Bootstrap scrollbars</h1>
+                    <h1 class="display-4">Bootstrap Scrollbars</h1>
                 </div>
+                <nav id="nav-links">
+                    <ul>
+                        <a href="#dots">Dots</a>
+                        <a href="#dot">Dot</a>
+                        <a href="#inset">Inset</a>
+                        <a href="#3d">3D</a>
+                        <a href="#thin">Thin</a>
+                    </ul>
+                </nav>
             </div>
         </header>
-        
+
         <div class="row py-5">
             <div class="col-lg-8 mx-auto">
-                
-                <div class="card mb-4">
+
+                <div class="card mb-4" id="dots" >
                     <div class="card-body p-5">
-                        <h4 class="mb-4">Dark rounded dots</h4>
+                        <p class="mb-4">Dark rounded dots</p>
                         <div id="content-1" class="custom-scrollbar-js p-2">
                             <h2>Bootstrap</h2>
                             <h4>Overview</h4>
@@ -45,109 +60,126 @@
                                 changes.
                                 Bootstrap primarily uses the following media query ranges—or breakpoints—in our source
                                 Sass files for our layout, grid system, and components.</p>
-                            <code>
-                                // Extra small devices (portrait phones, less than 576px)
-                                // No media query since this is the default in Bootstrap
-
-                                // Small devices (landscape phones, 576px and up)
-                                @media (min-width: 576px) { ... }
-
-                                // Medium devices (tablets, 768px and up)
-                                @media (min-width: 768px) { ... }
-
-                                // Large devices (desktops, 992px and up)
-                                @media (min-width: 992px) { ... }
-
-                                // Extra large devices (large desktops, 1200px and up)
-                                @media (min-width: 1200px) { ... }
-                            </code>
-
                         </div>
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card mb-4" id="dot">
                     <div class="card-body p-5">
-                        <h4 class="mb-4">Dark dots</h4>
-                        <div id="content-2" class="custom-scrollbar-js p-2">
-                            <h2>Node.JS</h2>
-                            <h4>About Node.js</h4>
-                            <p>Node.js is similar in design to, and influenced by, systems like Ruby's Event Machine and Python's Twisted. Node.js takes the event model a bit further. It presents an event loop as a runtime construct instead of as a library. In other systems, there is always a blocking call to start the event-loop. Typically, behavior is defined through callbacks at the beginning of a script, and at the end a server is started through a blocking call like EventMachine::run(). In Node.js, there is no such start-the-event-loop call. Node.js simply enters the event loop after executing the input script. Node.js exits the event loop when there are no more callbacks to perform. This behavior is like browser JavaScript — the event loop is hidden from the user.
-                                HTTP is a first-class citizen in Node.js, designed with streaming and low latency in mind. This makes Node.js well suited for the foundation of a web library or framework.
-                                Node.js being designed without threads doesn't mean you can't take advantage of multiple cores in your environment. Child processes can be spawned by using our child_process.fork() API, and are designed to be easy to communicate with. Built upon that same interface is the cluster module, which allows you to share sockets between processes to enable load balancing over your cores.</p>
+                        <p class="mb-4">Dark dots</h4>
+                            <div id="content-2" class="custom-scrollbar-js p-2">
+                                <h2>Node.JS</h2>
+                                <h4>About Node.js</h4>
+                                <p>Node.js is similar in design to, and influenced by, systems like Ruby's Event Machine
+                                    and Python's Twisted. Node.js takes the event model a bit further. It presents an
+                                    event loop as a runtime construct instead of as a library. In other systems, there
+                                    is always a blocking call to start the event-loop. Typically, behavior is defined
+                                    through callbacks at the beginning of a script, and at the end a server is started
+                                    through a blocking call like EventMachine::run(). In Node.js, there is no such
+                                    start-the-event-loop call. Node.js simply enters the event loop after executing the
+                                    input script. Node.js exits the event loop when there are no more callbacks to
+                                    perform. This behavior is like browser JavaScript — the event loop is hidden from
+                                    the user.
+                                    HTTP is a first-class citizen in Node.js, designed with streaming and low latency in
+                                    mind. This makes Node.js well suited for the foundation of a web library or
+                                    framework.
+                                    Node.js being designed without threads doesn't mean you can't take advantage of
+                                    multiple cores in your environment. Child processes can be spawned by using our
+                                    child_process.fork() API, and are designed to be easy to communicate with. Built
+                                    upon that same interface is the cluster module, which allows you to share sockets
+                                    between processes to enable load balancing over your cores.</p>
+                            </div>
+                    </div>
+                </div>
+                <div class="card mb-4" id="inset">
+                    <div class="card-body p-5">
+                        <p class="mb-4">Dark inset</p>
+                        <div id="content-3" class="custom-scrollbar-js p-2">
+                            <h2>Mongoose.JS</h2>
+                            <h4>An elegant mongodb object modeling for node.js</h4>
+                            <h5>Defining your schema</h5>
+                            <p>Everything in Mongoose starts with a Schema. Each schema maps to a MongoDB collection and
+                                defines the
+                                shape of the documents within that collection.</p>
+                            <code> import mongoose from 'mongoose';
+                                const { Schema } = mongoose;
+
+                                const blogSchema = new Schema({
+                                title: String, // String is shorthand for {type: String}
+                                author: String,
+                                body: String,
+                                comments: [{ body: String, date: Date }],
+                                date: { type: Date, default: Date.now },
+                                hidden: Boolean,
+                                meta: {
+                                votes: Number,
+                                favs: Number
+                                }
+                                });</code>
+                            <p>Each key in our code blogSchema defines a property in our documents which will be cast to
+                                its associated
+                                SchemaType. For example, we've defined a property title which will be cast to the String
+                                SchemaType and
+                                property date which will be cast to a Date SchemaType.
+
+                                Notice above that if a property only requires a type, it can be specified using a
+                                shorthand notation
+                                (contrast the title property above with the date property).
+
+                                Keys may also be assigned nested objects containing further key/type definitions like
+                                the meta property
+                                above. This will happen whenever a key's value is a POJO that doesn't have a type
+                                property.
+
+                                In these cases, Mongoose only creates actual schema paths for leaves in the tree. (like
+                                meta.votes and
+                                meta.favs above), and the branches do not have actual paths. A side-effect of this is
+                                that meta above
+                                cannot have its own validation. If validation is needed up the tree, a path needs to be
+                                created up the
+                                tree.</p>
                         </div>
                     </div>
                 </div>
-<div class="card mb-4">
-    <div class="card-body p-5">
-        <h4 class="mb-4">Dark inset</h4>
-        <div id="content-3" class="custom-scrollbar-js p-2">
-            <h2>Mongoose.JS</h2>
-            <h4>An elegant mongodb object modeling for node.js</h4>
-            <h5>Defining your schema</h5>
-            <p>Everything in Mongoose starts with a Schema. Each schema maps to a MongoDB collection and defines the
-                shape of the documents within that collection.</p>
-            <code> import mongoose from 'mongoose';
-                const { Schema } = mongoose;
 
-                const blogSchema = new Schema({
-                title: String, // String is shorthand for {type: String}
-                author: String,
-                body: String,
-                comments: [{ body: String, date: Date }],
-                date: { type: Date, default: Date.now },
-                hidden: Boolean,
-                meta: {
-                votes: Number,
-                favs: Number
-                }
-                });</code>
-                <p>Each key in our code blogSchema defines a property in our documents which will be cast to its associated
-                SchemaType. For example, we've defined a property title which will be cast to the String SchemaType and
-                property date which will be cast to a Date SchemaType.
-
-                Notice above that if a property only requires a type, it can be specified using a shorthand notation
-                (contrast the title property above with the date property).
-
-                Keys may also be assigned nested objects containing further key/type definitions like the meta property
-                above. This will happen whenever a key's value is a POJO that doesn't have a type property.
-
-                In these cases, Mongoose only creates actual schema paths for leaves in the tree. (like meta.votes and
-                meta.favs above), and the branches do not have actual paths. A side-effect of this is that meta above
-                cannot have its own validation. If validation is needed up the tree, a path needs to be created up the
-                tree.</p>
-                </div>
-            </div>
-                </div>
-
-                <div class="card mb-4">
+                <div class="card mb-4" id="3d">
                     <div class="card-body p-5">
-                        <h4 class="mb-4">3D dark</h4>
+                        <p class="mb-4">3D dark</p>
                         <div id="content-4" class="custom-scrollbar-js p-2">
                             <h2>Express.Js</h2>
                             <h4>Fast, unopinionated, minimalist web framework for Node.js</h4>
                             <h5>Web Applications</h5>
-                            <p>Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.</p>
+                            <p>Express is a minimal and flexible Node.js web application framework that provides a
+                                robust set of features for web and mobile applications.</p>
                             <h5>APIs</h5>
-                            <p>With a myriad of HTTP utility methods and middleware at your disposal, creating a robust API is quick and easy.</p>
+                            <p>With a myriad of HTTP utility methods and middleware at your disposal, creating a robust
+                                API is quick and easy.</p>
                             <h5>Performance</h5>
-                            <p>Express provides a thin layer of fundamental web application features, without obscuring Node.js features that you know and love.</p>
+                            <p>Express provides a thin layer of fundamental web application features, without obscuring
+                                Node.js features that you know and love.</p>
                             <h5>Basic Routing</h5>
-                            <p>Routing refers to determining how an application responds to a client request to a particular endpoint, which is a URI (or path) and a specific HTTP request method (GET, POST, and so on).
-                                Each route can have one or more handler functions, which are executed when the route is matched.</p>
+                            <p>Routing refers to determining how an application responds to a client request to a
+                                particular endpoint, which is a URI (or path) and a specific HTTP request method (GET,
+                                POST, and so on).
+                                Each route can have one or more handler functions, which are executed when the route is
+                                matched.</p>
                             <h5>Route Paths</h5>
-                            <p>Route paths, in combination with a request method, define the endpoints at which requests can be made. Route paths can be strings, string patterns, or regular expressions.
+                            <p>Route paths, in combination with a request method, define the endpoints at which requests
+                                can be made. Route paths can be strings, string patterns, or regular expressions.
 
-                                The characters ?, +, *, and () are subsets of their regular expression counterparts. The hyphen (-) and the dot (.) are interpreted literally by string-based paths.
-                                
-                                If you need to use the dollar character ($) in a path string, enclose it escaped within ([ and ]). For example, the path string for requests at “/data/$book”, would be “/data/([\$])book”.</p>    
-                            </div>
+                                The characters ?, +, *, and () are subsets of their regular expression counterparts. The
+                                hyphen (-) and the dot (.) are interpreted literally by string-based paths.
+
+                                If you need to use the dollar character ($) in a path string, enclose it escaped within
+                                ([ and ]). For example, the path string for requests at “/data/$book”, would be
+                                “/data/([\$])book”.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card mb-4">
+                <div class="card mb-4" id="thin">
                     <div class="card-body p-5">
-                        <h4 class="mb-4">Dark thin</h4>
+                        <p class="mb-4">Dark thin</p>
                         <div id="content-5" class="custom-scrollbar-js p-2">
                             <h2>React.JS</h2>
                             <h4>Introducing JSX</h4>
@@ -164,11 +196,15 @@
                                 working with UI inside the JavaScript code. It also allows React to show more useful
                                 error and warning messages.</p>
                             <h4>Components and Props</h4>
-                            <p>Components let you split the UI into independent, reusable pieces, and think about each piece in isolation
+                            <p>Components let you split the UI into independent, reusable pieces, and think about each
+                                piece in isolation
                                 <br>
-                                Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
-                                Components can refer to other components in their output. This lets us use the same component abstraction for any level of detail. A button, a form, a dialog, a screen: in React apps, all those are commonly expressed as components.
-                            </p>    
+                                Conceptually, components are like JavaScript functions. They accept arbitrary inputs
+                                (called “props”) and return React elements describing what should appear on the screen.
+                                Components can refer to other components in their output. This lets us use the same
+                                component abstraction for any level of detail. A button, a form, a dialog, a screen: in
+                                React apps, all those are commonly expressed as components.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -176,12 +212,26 @@
             </div>
         </div>
 
+        <footer>
+            2021 <span>S</span>hakex<span>S</span>empe
+        </footer>
+
     </div>
-    
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js" integrity="sha512-2hIlk2fL+NNHkULe9gGdma/T5vSYk80U5tvAFSy3dGEl8XD4h2i6frQvHv5B+bm/Itmi8nJ6krAcj5FWFcBGig==" crossorigin="anonymous"></script>
-<script src="main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"
+        integrity="sha512-2hIlk2fL+NNHkULe9gGdma/T5vSYk80U5tvAFSy3dGEl8XD4h2i6frQvHv5B+bm/Itmi8nJ6krAcj5FWFcBGig=="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
