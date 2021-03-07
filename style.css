@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Rokkitt:wght@400;600&family=Sriracha&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Rokkitt:wght@400;600&family=Sriracha&family=Tangerine:wght@400;700&family=Sriracha&family=Quicksand:wght@300&display=swap');
 
 html{
     scroll-behavior: smooth;
@@ -39,7 +39,7 @@ body{
 }
 
 .p-2 p{
-    font-family: 'Merienda', cursive;
+    font-family: 'Quicksand', sans-serif;
     text-decoration: none;
 }
 #nav-links ul{
@@ -101,14 +101,10 @@ span{
     }
     .card h5{
         font-size: 1.1em;
-        font-weight: 400;
-        font-family: 'Merienda', cursive;
     
     }
     .card p{
-        font-family: 'Sriracha', cursive;
         font-size: 1.3em;
-        text-decoration: underline;
     }
     
     .p-2 p{
