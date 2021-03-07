@@ -37,6 +37,7 @@ body{
     font-size: 1.3em;
     text-decoration: underline;
 }
+
 .p-2 p{
     font-family: 'Merienda', cursive;
     text-decoration: none;
@@ -81,6 +82,48 @@ span{
 
 
 @media screen and (max-width: 450px) {
-
+    .row h1{
+        font-family: 'Tangerine', cursive;
+        /* font-family: 'Merienda', cursive; */
+        font-size: 6em;
+        font-weight: 600;
+    }
+    .card h2{
+    
+        font-family: 'Tangerine', cursive;
+        font-size: 3em;
+        font-weight: 900;
+    }
+    .card h4{
+        font-family: 'Merienda', cursive;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+    .card h5{
+        font-size: 1.1em;
+        font-weight: 400;
+        font-family: 'Merienda', cursive;
+    
+    }
+    .card p{
+        font-family: 'Sriracha', cursive;
+        font-size: 1.3em;
+        text-decoration: underline;
+    }
+    
+    .p-2 p{
+        font-size: small;
+        text-decoration: none;
+    }
+    #nav-links ul{
+        justify-content: space-around;
+        align-items: center;
+        padding: 10px;
+        
+    }
+    #nav-links a{
+            font-size: 1.2em;
+    
+    }
 
 }
